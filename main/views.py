@@ -1,5 +1,11 @@
 from django.shortcuts import render
+from .request import api_request
 
 # Create your views here.
 def home(request):
-   return render(request, 'main/main.html')
+   data = api_request('nairobi')
+   context = {
+      'data': data
+   }
+
+   return render(request, 'main/main.html', context)
