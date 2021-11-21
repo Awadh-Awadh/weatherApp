@@ -3,7 +3,7 @@ from .request import api_request
 
 # Create your views here.
 def home(request):
-   data = api_request('nairobi')
+   data = api_request('muranga')
    context = {
       'data': data
    }

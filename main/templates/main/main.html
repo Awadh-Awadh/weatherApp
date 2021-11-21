@@ -1,8 +1,43 @@
 {% extends  'main/base.html' %}
 
-
+{% load static %}
 {% block content %}
-<div></div>
-{{data}}
+<section id="landing">
+  <div class="landing">
+  
+    
+   <div class="row">
+      <!-- Navbar -->
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="{% static 'images/logo.png' %}" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            WeatherWix
+          </a>
+        </div>
+      </nav>
+      <div class="col-lg-6">
+        <!-- Landing-page -->
+        <div class="content">
+          <h1>Know You Weather and keep weathering with us </h1>          
+        </div>
+        <div class="subcont">
+          <h5>Weather assistant at the comfort of your home</h5>
+        </div>
+      </div>
+      <div class="col-lg-6">
+       <img src="{% static 'images/page.png' %}" alt="Landing-image" class="landing-imageimg">
+      </div>
+
+   </div>
+   <div class="start">
+     <a href=""><button class="btn btn-warning">Get Started</button></a>
+   </div>
+  
+  </div>
+
+</section>
+
+<!-- {{data}} -->
 
 {% endblock %}
