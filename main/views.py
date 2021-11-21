@@ -3,9 +3,12 @@ from .request import api_request
 
 # Create your views here.
 def home(request):
+
+   return render(request, 'main/main.html')
+
+def info(request):
    data = api_request('muranga')
    context = {
-      'data': data
+      'data': data['weather']
    }
-
-   return render(request, 'main/main.html', context)
+   return render(request, 'main/data.html', context)
