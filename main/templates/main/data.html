@@ -1,7 +1,52 @@
 {% extends 'main/base.html' %}
-
+{% load static %}
 {% block content %}
+<section id = "results">
 
-  {{data}}
+  <div class="row">
+    <div class="col-md-6">
+      <div class="search-form">
+        <form method = "post">
+          <input type="text" name="search" id="">
+          <input type="submit" value="Search">
+        </form>
+      </div>
+      <div class="rain">
+        <img src="{% static 'images/fall.png' %}" alt="Weather-image">
+      </div>
+    </div>
+    {% if data %}
+    {% for i in data %}
+    
+    <div class="col-md-6">
+      <div class="weather-details">
+        <div class="top-header">
+          <h4>Today’s Highlights</h4>
+        </div>
+        <div class="city">
+          <h6>{{city}}</h6>
+        </div>
+        <div class="condition">
+          <div class="box">
+            <div class="condition-image">
+              <img src=" http://openweathermap.org/img/wn/{{i.icon}}@2x.png" alt="">
+            </div>
+          </div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</section>
+
+
+
+
 
 {% endblock %}

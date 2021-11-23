@@ -40,3 +40,13 @@ font-weight: 900;
   font-weight: 900;
   font-size: 1.5rem;
 }
+#results{
+background-color:#e0e0e0;
+height: 100vh;
+}
+.box{
+border-radius: 50px;
+background: #e0e0e0;
+box-shadow: inset 20px 20px 60px #bebebe,
+            inset -20px -20px 60px #ffffff;
+}
