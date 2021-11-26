@@ -7,7 +7,9 @@ def home(request):
    return render(request, 'main/main.html')
 
 def info(request):
-   data = api_request('nairobi')
+   if request.method == "POST":
+      query = request.POST.get('search')
+      data = api_request(query)
    context = {
       'data': data['weather'],
       'city': data['name']
