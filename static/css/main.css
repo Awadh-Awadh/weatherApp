@@ -1,0 +1,118 @@
+html{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+  background-color: #010A3D;
+  height: auto !important;
+  color: #FDFEFF !important;
+  padding:2% 6%;
+}
+.nav-img{
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  top: -.5rem;
+  left: 2rem;
+}
+.content h1{
+  margin-top: 5rem;
+  font-weight: 900;
+  font-size: 4rem;
+  width: 60%;
+}
+
+.subcont h5{
+margin: 2rem 0;
+font-weight: 900;
+}
+.landing-image{
+  margin: 6rem auto;
+}
+.start{
+  margin: 3rem 0;
+}
+.start button{
+  padding: 1rem 3rem;
+  color: #FDFEFF;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+#results{
+background-color:#e0e0e0;
+height: 100vh;
+}
+.box{
+  position: relative;
+  border-radius: 50px;
+  width: 200px;
+  height: 200px;
+  margin: 2rem 0;
+  background: #e0e0e0;
+  box-shadow: inset -20px -20px 60px #bebebe,
+              inset 20px 20px 60px #ffffff;
+}
+.top-header{
+  margin: 2rem;
+}
+.top-header h4{
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #F9A826;
+}
+.box .condition-image{
+  margin:0 auto;
+
+}
+.condition{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info-intro{
+  width: 80%;
+  margin: 2rem;
+}
+.search-form{
+  margin: 2rem;
+}
+input{
+  padding: .4rem 0;
+  background-color: transparent;
+  border: 2px solid #010A3D;
+  border-radius: 10px;
+}
+.info-intro h3{
+  font-weight: 900;
+  line-height: 4rem;
+  color: #010A3D;
+  font-size: 2.5rem;
+}
+.box h4,.weather-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box h4{
+  color: #010A3D;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.weather-img{
+  width: 120px;
+  height: 120px;
+  margin: 1.8rem;
+  }
+ .description{
+  opacity: 0.6;
+  color: black;
+  font-weight: bold;
+  margin-top: 2rem;
+  }
+  .city h1{
+    color: #010A3D;
+  }
