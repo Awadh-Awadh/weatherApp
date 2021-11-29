@@ -7,8 +7,9 @@ def home(request):
    return render(request, 'main/main.html')
 
 def info(request):
+   none = None
    query = request.POST.get('search')
-   if query == '':
+   if query == '' :
       return redirect('weather-data')
    data = api_request(query)
    context = {
@@ -20,7 +21,9 @@ def info(request):
       'humidity': data['main']['humidity'],
       'pressure' : data['main']['pressure'],
       'country' : data['sys']['country'],
+      'name' : None,
       
    }
+   print(data)
       
    return render(request, 'main/data.html', context)
