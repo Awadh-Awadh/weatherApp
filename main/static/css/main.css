@@ -106,5 +106,13 @@ input{
   width: 120px;
   height: 120px;
   margin: 1.8rem;
-  
-}
+  }
+ .description{
+  opacity: 0.6;
+  color: black;
+  font-weight: bold;
+  margin-top: 2rem;
+  }
+  .city h1{
+    color: #010A3D;
+  }

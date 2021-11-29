@@ -20,7 +20,7 @@
       </div>
     </div>
     {% if data %}
-    {% for i in data %}
+    {% for i in info %}
     
     <div class="col-md-6">
       <div class="weather-details">
@@ -28,7 +28,7 @@
           <h4>Today’s Highlights</h4>
         </div>
         <div class="city">
-          <h6>{{city}}</h6>
+          <h1>{{city}}</h1>
         </div>
         <div class="condition">
           <div class="box ">
@@ -36,17 +36,34 @@
               <h4>{{i.description}}</h4>
           </div>
           <div class="box text-center">
-            <h4>Awadh</h4>
+            <p class = 'description'>TEMPERATURE</p>
+            <h4>{{temperature |floatformat:1}}</h4>
           </div>
-          <div class="box text-center">Awadh</div>
-          <div class="box text-center">Awadh</div>
-          <div class="box text-center">Awadh</div>
-          <div class="box text-center">Awadh</div>
+          <div class="box text-center">
+            <p class = 'description'>WIND SPEED</p>
+            <h4>{{wind}} m/s</h4>
+          </div>
+          <div class="box text-center">
+            <p class = 'description'>HUMIDITY</p>
+            <h4>{{humidity}} %</h4>
+          </div>
+          <div class="box text-center">
+            <p class = 'description'>PRESSURE</p>
+            <h4>{{pressure}} hPa</h4>
+          </div>
+          <div class="box text-center">
+            <p class = 'description'>COUNTRY</p>
+            <h4>{{country}}</h4>
+          </div>
         </div>
+        {% endfor %}
+      {% else %}
+        <h1>Please enter a known city</h1>
+      {% endif %}
       </div>
+      
     </div>
-    {% endfor %}
-    {% endif %}
+   
   </div>
 </section>
 
