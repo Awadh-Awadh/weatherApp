@@ -1,1 +1,1 @@
-web: gunicorn awadhweather.wsgi
+web: gunicorn weather.wsgi
