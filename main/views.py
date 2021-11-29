@@ -8,6 +8,8 @@ def home(request):
 
 def info(request):
    query = request.POST.get('search')
+   if query == '':
+      return redirect('weather-data')
    data = api_request(query)
    context = {
       'data':data,
